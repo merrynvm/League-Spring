@@ -69,4 +69,9 @@ public class ChampionService {
     public List<Champion> deleteByNome(String nome){
         return championRepository.deleteByNome(nome);
     }
+
+    public List<Champion> championByRegion(String regione){
+        return championRepository.findByRegione(regione);
+    }
+
 }

@@ -119,4 +119,9 @@ public class ChampionsController {
     public List<Champion> deleteByNome(@RequestParam String nome){
         return championService.deleteByNome(nome);
     }
+
+    @GetMapping("/regione")
+    public List<Champion> championByRegione(@RequestParam String regione){
+        return championService.championByRegion(regione);
+    }
 }
