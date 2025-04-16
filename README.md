@@ -10,3 +10,8 @@
 ~ Validation
 ~ Java Mail Sender
 ```
+### Attenzione ⚠:
+Non puoi inserire la password del tuo account Gmail per inviare mail, avrai di una password che ti fornisce Google stessa (guarda il link qui sotto).
+⚠Dovrai abilitare l'autenticazione 2FA per accedere al link qui sotto!⚠
+
+Link: https://myaccount.google.com/u/3/apppasswords
