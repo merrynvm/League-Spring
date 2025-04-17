@@ -124,4 +124,10 @@ public class ChampionsController {
     public List<Champion> championByRegione(@RequestParam String regione){
         return championService.championByRegion(regione);
     }
+
+    @GetMapping("/ruolo")
+    public List<Champion> championByRuolo(@RequestParam String ruolo){
+        return championService.championByRuolo(ruolo);
+    }
+
 }

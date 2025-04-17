@@ -46,6 +46,7 @@ public class ChampionService {
     public Champion updateChampion(Long id, Champion championToUpdate){
         for (Champion existingChampion : championList) {
             if (existingChampion.getId().equals(id)) {
+
                 existingChampion.setNome(championToUpdate.getNome());
                 existingChampion.setRuolo(championToUpdate.getRuolo());
                 existingChampion.setDifficolta(championToUpdate.getDifficolta());
@@ -72,6 +73,10 @@ public class ChampionService {
 
     public List<Champion> championByRegion(String regione){
         return championRepository.findByRegione(regione);
+    }
+
+    public List<Champion> championByRuolo(String ruolo){
+        return championRepository.findByRuolo(ruolo);
     }
 
 }

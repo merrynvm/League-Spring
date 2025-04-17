@@ -15,4 +15,7 @@ public interface ChampionRepository extends JpaRepository<Champion, Long> {
     @Query("select b from Champion b where b.regione = ?1")
     List<Champion> findByRegione(String regione);
 
+    @Query(value = "select * from champion where ruolo = ?1", nativeQuery = true)
+    List<Champion> findByRuolo(String ruolo);
+
 }
