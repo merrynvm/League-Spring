@@ -79,4 +79,8 @@ public class ChampionService {
         return championRepository.findByRuolo(ruolo);
     }
 
+    public List<Champion> championByDifficolta(String difficolta){
+        return championRepository.findByDifficolta(difficolta);
+    }
+
 }

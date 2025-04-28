@@ -130,4 +130,9 @@ public class ChampionsController {
         return championService.championByRuolo(ruolo);
     }
 
+    @GetMapping("/difficolta")
+    public List<Champion> championByDifficolta(@RequestParam String difficolta){
+        return championService.championByDifficolta(difficolta);
+    }
+
 }

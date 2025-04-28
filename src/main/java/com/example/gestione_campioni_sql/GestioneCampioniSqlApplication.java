@@ -1,6 +1,5 @@
 package com.example.gestione_campioni_sql;
 
-import com.example.gestione_campioni_sql.Service.ChampionService;
 import com.example.gestione_campioni_sql.Service.EmailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
